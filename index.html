@@ -349,6 +349,227 @@
             <button class="btn btn-primary" onclick="registerWorkshop()">Register for Workshops</button>
         </div>
     </div>
-    <script src="/script.js"></script>
+
+    <!-- here onwards Guna work -->
+    <section class="join-section">
+    <h2>Join as SSC Mentor or Student</h2>
+    <p class="subheading">Connect, Learn, and Grow Together</p>
+    
+    <div class="join-grid">
+      <!-- Mentor Section -->
+      <div class="card">
+        <h3><i class="fas fa-chalkboard-teacher"></i> Become a Mentor</h3>
+        <ul>
+          <li>Expertise in your domain</li>
+          <li>1+ hour commitment weekly</li>
+          <li>Guide students via chat or live sessions</li>
+        </ul>
+
+        <form>
+          <input type="text" placeholder="Full Name" required  class="mb-2"/>
+          <input type="email" placeholder="Email Address" required  class="mb-2"/>
+          <input type="url" placeholder="LinkedIn Profile URL" required class="mb-2"/>
+          <textarea rows="4" placeholder="Brief About You (max 250 words)" required class="mb-2"></textarea>
+          <button type="submit">Apply as Mentor</button>
+        </form>
+      </div>
+
+      <!-- Student Section -->
+      <div class="card">
+        <h3><i class="fas fa-user-graduate"></i> Join as a Student</h3>
+        <p>Choose a group that suits your interests and start your journey:</p>
+        <a href="https://chat.whatsapp.com/H3AgvLp9axaEb2WUBbI6a1" target="_blank">👨‍💻 Join Tech Group</a>
+        <a href="https://chat.whatsapp.com/career-group-link" target="_blank">🎯 Join Career Guidance Group</a>
+        <a href="https://www.whatsapp.com/channel/0029VaYTpyWJpe8oGde6sz3K" target="_blank">🤝 Join Social Work Group</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="mentor-section">
+  <h2>SSC Mentors Showcase</h2>
+
+  <div class="mentor-filters">
+    <button onclick="filterMentors('all')">All</button>
+    <button onclick="filterMentors('Tech')">Tech</button>
+    <button onclick="filterMentors('Career')">Career Guidance</button>
+    <button onclick="filterMentors('Social')">Social Work</button>
+  </div>
+
+  <!-- Mentor Cards -->
+  <div id="mentorContainer" class="mentor-container">
+
+    <div class="mentor-card" data-field="Tech">
+      <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1736101687/SSC_DEV_HACK_NELLORE_NARAYANA_ENG_CLG/maheswaram_subrahmanyam_pgidvm.jpg" alt="Mentor">
+      <h3>Maheswaram Subrahmanyam</h3>
+      <p>Tech Mentor</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <div class="mentor-card" data-field="Tech">
+      <img src="C:\Users\guna\OneDrive\Desktop\rumeena ssc.JPG" alt="Mentor">
+      <h3>Shaik Rumeena</h3>
+      <p>Tech Mentor</p>
+      <div class="social-links">
+        <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+    <div class="mentor-card" data-field="Career">
+      <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1739721228/SSC_HYD_MICROSOFT/sathi_uwkpyu.jpg" alt="Mentor">
+      <h3>P Swaty</h3>
+      <p>Career Guidance Mentor</p>
+      <div class="social-links">
+        <a href="#"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <div class="mentor-card" data-field="Career">
+      <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1739723042/SSC_HYD_MICROSOFT/SUDHA_t1iksw.jpg" alt="Mentor">
+      <h3>Sai Sudha Sugali</h3>
+      <p>Career Guidance Mentor</p>
+      <div class="social-links">
+        <a href="#"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+    <div class="mentor-card" data-field="Career">
+      <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1736101676/SSC_DEV_HACK_NELLORE_NARAYANA_ENG_CLG/WhatsApp_Image_2025-01-05_at_23.25.27_9469efc9_ywdkok.jpg" alt="Mentor">
+      <h3>Vallabi Nandini</h3>
+      <p>Career Guidance Mentor</p>
+      <div class="social-links">
+        <a href="#"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+
+
+    <div class="mentor-card" data-field="Social">
+      <img src="" alt="Mentor">
+      <h3>Shaik Nihal</h3>
+      <p>Social Work Mentor</p>
+      <div class="social-links">
+        <a href="#"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <section class="internship-section opp">
+    <h2 class="section-heading">Internship Opportunities</h2>
+
+    <div class="internship-grid">
+
+      <!-- Web Development Intern -->
+      <div class="internship-card">
+        <h3 class="internship-title">Web Development Intern</h3>
+        <p><strong>Eligibility:</strong> 2nd/3rd year CS/IT students</p>
+        <p><strong>Deadline:</strong> July 15, 2025</p>
+        <a href="https://example.com/apply" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+
+      <!-- Marketing Intern -->
+      <div class="internship-card">
+        <h3 class="internship-title">Frontend</h3>
+       <p><strong>Eligibility:</strong> All UG students</p>
+        <p><strong>Deadline:</strong> July 22, 2025</p>
+        <a href="https://example.com/marketing" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+
+      <!-- Content Writing Intern -->
+      <div class="internship-card">
+        <h3 class="internship-title">Backend - Python</h3>
+        <p><strong>Eligibility:</strong> UG</p>
+        <p><strong>Deadline:</strong> Rolling</p>
+        <a href="https://example.com/content" target="_blank" class="apply-btn">Apply Now</a>
+      </div>
+
+    </div>
+  </section>
+
+<section class="blog-section">
+  <h2 class="section-title">SSC Blog & Success Stories</h2>
+
+  <div class="blog-grid">
+
+    <div class="blog-card">
+      <h3 class="blog-title">How I Got My First Internship</h3>
+      <p class="blog-author">By Anjali Sharma, Tech Mentee</p>
+      <p class="blog-text">“Thanks to my SSC mentor, I landed a remote internship at ABC Tech. Their resume sessions were game-changing.”</p>
+      <a href="https://linkedin.com/success-story" class="read-link" target="_blank">Read More</a>
+    </div>
+
+    <div class="blog-card">
+      <h3 class="blog-title">From Confused to Confident</h3>
+      <p class="blog-author">By Suresh N., Career Guidance</p>
+      <p class="blog-text">“I joined SSC with no idea what to do after college. My mentor helped me prepare for CAT and guided me personally.”</p>
+      <a href="https://linkedin.com/story" class="read-link" target="_blank">Read More</a>
+    </div>
+
+    <div class="blog-card">
+      <h3 class="blog-title">Volunteering as a Social Mentor</h3>
+      <p class="blog-author">By Neha R., Social Mentor</p>
+      <p class="blog-text">“Mentoring rural students gave me purpose. SSC gave me a platform to share what I learned over years.”</p>
+      <a href="https://linkedin.com/mentor-story" class="read-link" target="_blank">Read More</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="faq-section">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+
+  <div class="faq-container">
+    
+    <div class="faq-item">
+      <h4 class="faq-question">Who can become an SSC mentor?</h4>
+      <p class="faq-answer">Anyone with industry experience or mentoring interest in Tech, Career, or Social fields.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4 class="faq-question">Is there any fee to join as a student?</h4>
+      <p class="faq-answer">No, SSC is a free mentorship and support platform.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4 class="faq-question">How do I get internship updates?</h4>
+      <p class="faq-answer">Join the WhatsApp groups or follow SSC LinkedIn to receive regular updates.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="contact-section">
+  <h2 class="contact-title">Contact Us</h2>
+
+  <div class="contact-grid">
+    
+    <!-- Contact Info -->
+    <div class="contact-info">
+      <p><strong>Email:</strong> studentservicecommunity@gmail.com</p>
+      <p><strong>Phone:</strong> +91 917569399294</p>
+      <p><strong>Feedback or queries?</strong> Use the form.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+  </div>
+</section>
+<!-- Filter Script -->
+<script src="/script.js">
+  function filterMentors(field) {
+    const cards = document.querySelectorAll('.mentor-card');
+    cards.forEach(card => {
+      const category = card.getAttribute('data-field');
+      card.style.display = (field === 'all' || category === field) ? 'block' : 'none';
+    });
+  }
+   
+</script>
+    
 </body>
 </html>

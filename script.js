@@ -449,3 +449,13 @@ document.querySelector('footer p').innerHTML =
     `&copy; ${new Date().getFullYear()} Student Service Community. All rights reserved.`;
 
 console.log('SSC Website fully initialized and ready!');
+
+//----------------------------
+
+function filterMentors(field) {
+    const cards = document.querySelectorAll('.mentor-card');
+    cards.forEach(card => {
+      const category = card.getAttribute('data-field');
+      card.style.display = (field === 'all' || category === field) ? 'block' : 'none';
+    });
+  }

@@ -349,9 +349,9 @@
             <button class="btn btn-primary" onclick="registerWorkshop()">Register for Workshops</button>
         </div>
     </div>
-
-    <!-- here onwards Guna work -->
-    <section class="join-section">
+<!------------------------->
+   <div class="main-bg">
+  <section class="join-section">
     <h2>Join as SSC Mentor or Student</h2>
     <p class="subheading">Connect, Learn, and Grow Together</p>
     
@@ -485,6 +485,9 @@
     </div>
   </section>
 
+
+
+
 <section class="blog-section">
   <h2 class="section-title">SSC Blog & Success Stories</h2>
 
@@ -514,6 +517,7 @@
   </div>
 </section>
 
+
 <section class="faq-section">
   <h2 class="faq-title">Frequently Asked Questions</h2>
 
@@ -537,6 +541,8 @@
   </div>
 </section>
 
+
+
 <section class="contact-section">
   <h2 class="contact-title">Contact Us</h2>
 
@@ -559,16 +565,9 @@
 
   </div>
 </section>
+</div>
 <!-- Filter Script -->
-<script src="/script.js">
-  function filterMentors(field) {
-    const cards = document.querySelectorAll('.mentor-card');
-    cards.forEach(card => {
-      const category = card.getAttribute('data-field');
-      card.style.display = (field === 'all' || category === field) ? 'block' : 'none';
-    });
-  }
-   
+<script src="/script.js"> 
 </script>
     
 </body>

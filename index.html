@@ -1,393 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Service Community - Empowering Future Leaders</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join SSC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 </head>
+<style>
+
+</style>
 <body>
-    <!-- Header -->
-    <header id="header">
-        <nav class="container">
-            <a href="#" class="logo">SSC</a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#events">Events</a></li>
-                <li><a href="#initiatives">Initiatives</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
-        </nav>
-    </header>
+<header class="ssc-navbar">
+  <div class="container navbar-container">
+    <a href="#home" class="ssc-logo">
+      <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/t_Logo%20overlay/v1736098848/SSC_DEV_HACK_NELLORE_NARAYANA_ENG_CLG/SSClogo_mrxxd6.jpg" alt="SSC Logo" />
+      <span>SSC</span>
+    </a>
+    <nav class="ssc-nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#events">Events</a>
+      <a href="#social">Social Work</a>
+      <a href="#mentors">Mentors</a>
+      <a href="#internships">Internships</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content">
-                <h1>Student Service Community</h1>
-                <p>Empowering students with comprehensive services, tech guidance, and community support</p>
-                <div class="cta-buttons">
-                    <a href="#" class="btn btn-primary" onclick="openModal('joinModal')">Join SSC</a>
-                    <a href="#services" class="btn btn-secondary">Explore Services</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Educational Services -->
-    <section class="section" id="services">
-        <div class="container">
-            <h2 class="section-title fade-in">Educational Services</h2>
-            <div class="services-grid">
-                <div class="service-card fade-in">
-                    <h3>🏆 Hackathon Guidance</h3>
-                    <p>Get expert tips, resources, and information about upcoming competitions to boost your coding skills.</p>
-                    <ul>
-                        <li>Competition registration assistance</li>
-                        <li>Team formation support</li>
-                        <li>Technical mentorship</li>
-                        <li>Project presentation tips</li>
-                    </ul>
-                    <button class="btn btn-primary" style="margin-top: 1rem;" onclick="openModal('hackathonModal')">Learn More</button>
-                </div>
 
-                <div class="service-card fade-in">
-                    <h3>💼 Career Development</h3>
-                    <p>Build your professional profile with resume building, interview preparation, and job opportunities.</p>
-                    <ul>
-                        <li>Resume building workshops</li>
-                        <li>Mock interview sessions</li>
-                        <li>Job opportunity alerts</li>
-                        <li>LinkedIn profile optimization</li>
-                    </ul>
-                    <button class="btn btn-primary" style="margin-top: 1rem;" onclick="openModal('careerModal')">Get Started</button>
-                </div>
 
-                <div class="service-card fade-in">
-                    <h3>💻 Tech Guidance</h3>
-                    <p>Comprehensive learning paths and resources for various programming languages and technologies.</p>
-                    <ul>
-                        <li>Python, Java, C, C++ tutorials</li>
-                        <li>Data Analytics & Power BI</li>
-                        <li>SQL database management</li>
-                        <li>Full Stack development</li>
-                    </ul>
-                    <button class="btn btn-primary" style="margin-top: 1rem;" onclick="openModal('techModal')">Start Learning</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Tech Events & Industry Exposure -->
-    <section class="section" id="events" style="background: #f8f9fa;">
-        <div class="container">
-            <h2 class="section-title fade-in">Tech Events & Industry Exposure</h2>
-            <div class="events-container">
-                <div class="event-card fade-in">
-                    <div class="event-header">
-                        <h3>Microsoft Visits</h3>
-                    </div>
-                    <div class="event-body">
-                        <div class="event-date">Next Event: Aug 15, 2025</div>
-                        <p>Exclusive sessions with Microsoft engineers and recruiters.</p>
-                        <ul>
-                            <li>Technical workshops</li>
-                            <li>Career opportunities</li>
-                            <li>Networking sessions</li>
-                        </ul>
-                        <button class="btn btn-primary" onclick="registerEvent('Microsoft Visit')">Register Now</button>
-                    </div>
-                </div>
-
-                <div class="event-card fade-in">
-                    <div class="event-header">
-                        <h3>Google Developer Group</h3>
-                    </div>
-                    <div class="event-body">
-                        <div class="event-date">Next Event: Aug 22, 2025</div>
-                        <p>Connect with Google developers and learn about latest technologies.</p>
-                        <ul>
-                            <li>Android development</li>
-                            <li>Cloud computing</li>
-                            <li>Machine learning</li>
-                        </ul>
-                        <button class="btn btn-primary" onclick="registerEvent('GDG Event')">Register Now</button>
-                    </div>
-                </div>
-
-                <div class="event-card fade-in">
-                    <div class="event-header">
-                        <h3>Workshops & Seminars</h3>
-                    </div>
-                    <div class="event-body">
-                        <div class="event-date">Ongoing</div>
-                        <p>Regular workshops and guest lectures by industry experts.</p>
-                        <ul>
-                            <li>Guest lectures</li>
-                            <li>Coding bootcamps</li>
-                            <li>Skill development</li>
-                        </ul>
-                        <button class="btn btn-primary" onclick="openModal('workshopModal')">View Schedule</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Service Initiatives -->
-    <section class="section" id="initiatives">
-        <div class="container">
-            <h2 class="section-title fade-in">Social Service Initiatives</h2>
-            <div class="initiatives-grid">
-                <div class="initiative-card fade-in">
-                    <div class="initiative-icon">🤝</div>
-                    <h3>Community Outreach</h3>
-                    <p>Food distribution and blanket donations to help those in need in our community.</p>
-                    <button class="btn btn-primary" onclick="volunteerSignup('Community Outreach')">Volunteer</button>
-                </div>
-
-                <div class="initiative-card fade-in">
-                    <div class="initiative-icon">🎉</div>
-                    <h3>Celebration Events</h3>
-                    <p>Organizing Children's Day events and visits to old age homes to spread joy and happiness.</p>
-                    <button class="btn btn-primary" onclick="volunteerSignup('Celebration Events')">Join Events</button>
-                </div>
-
-                <div class="initiative-card fade-in">
-                    <div class="initiative-icon">🏫</div>
-                    <h3>School Support</h3>
-                    <p>Providing education support and meal distribution in underprivileged schools.</p>
-                    <button class="btn btn-primary" onclick="volunteerSignup('School Support')">Support Schools</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <div class="container">
-            <h2>Stay Updated</h2>
-            <p>Subscribe to our newsletter for the latest updates on events, opportunities, and community initiatives.</p>
-            <form class="newsletter-form" id="newsletterForm">
-                <input type="email" class="newsletter-input" placeholder="Enter your email" required id="newsletterEmail">
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-            </form>
-            <div id="newsletterMessage"></div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <a href="#home">Home</a>
-                    <a href="#services">Services</a>
-                    <a href="#events">Events</a>
-                    <a href="#initiatives">Initiatives</a>
-                </div>
-                <div class="footer-section">
-                    <h3>Services</h3>
-                    <a href="#" onclick="openModal('hackathonModal')">Hackathon Guidance</a>
-                    <a href="#" onclick="openModal('careerModal')">Career Development</a>
-                    <a href="#" onclick="openModal('techModal')">Tech Guidance</a>
-                </div>
-            
-            </div>
-        </div>
-    </footer>
-
-    <!-- Modals -->
-    
-    <!-- Join Modal -->
-    <div id="joinModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('joinModal')">&times;</span>
-            <h2>Join Student Service Community</h2>
-            <form id="joinForm">
-                <div class="form-group">
-                    <label for="fullName">Full Name</label>
-                    <input type="text" id="fullName" name="fullName" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="university">University/College</label>
-                    <input type="text" id="university" name="university" required>
-                </div>
-                <div class="form-group">
-                    <label for="year">Year of Study</label>
-                    <select id="year" name="year" required>
-                        <option value="">Select Year</option>
-                        <option value="1">1st Year</option>
-                        <option value="2">2nd Year</option>
-                        <option value="3">3rd Year</option>
-                        <option value="4">4th Year</option>
-                        <option value="graduate">Graduate</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="interests">Areas of Interest</label>
-                    <textarea id="interests" name="interests" rows="3" placeholder="Programming languages, career goals, social causes, etc."></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Join Community</button>
-                <div id="joinMessage"></div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Contact Modal -->
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('contactModal')">&times;</span>
-            <h2>Contact Us</h2>
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="contactName">Name</label>
-                    <input type="text" id="contactName" name="contactName" required>
-                </div>
-                <div class="form-group">
-                    <label for="contactEmail">Email</label>
-                    <input type="email" id="contactEmail" name="contactEmail" required>
-                </div>
-                <div class="form-group">
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-                <div id="contactMessage"></div>
-            </form>
-        </div>
-    </div>
-
-    <!-- Service Modals -->
-    <div id="hackathonModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('hackathonModal')">&times;</span>
-            <h2>Hackathon Guidance Program</h2>
-            <p>Join our comprehensive hackathon preparation program:</p>
-            <ul style="margin: 1rem 0; padding-left: 2rem;">
-                <li>Weekly coding challenges</li>
-                <li>Team formation workshops</li>
-                <li>Mentorship from industry experts</li>
-                <li>Access to resources and tools</li>
-                <li>Registration assistance for competitions</li>
-            </ul>
-            <button class="btn btn-primary" onclick="enrollService('Hackathon Guidance')">Enroll Now</button>
-        </div>
-    </div>
-
-    <div id="careerModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('careerModal')">&times;</span>
-            <h2>Career Development Services</h2>
-            <p>Accelerate your career with our professional development program:</p>
-            <ul style="margin: 1rem 0; padding-left: 2rem;">
-                <li>Professional resume building</li>
-                <li>Interview preparation sessions</li>
-                <li>LinkedIn profile optimization</li>
-                <li>Job opportunity matching</li>
-                <li>Networking events</li>
-            </ul>
-            <button class="btn btn-primary" onclick="enrollService('Career Development')">Get Started</button>
-        </div>
-    </div>
-
-    <div id="techModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('techModal')">&times;</span>
-            <h2>Tech Guidance & Learning Paths</h2>
-            <p>Master technology with our structured learning programs:</p>
-            <div style="margin: 1rem 0;">
-                <h4>Programming Languages:</h4>
-                <ul style="padding-left: 2rem;">
-                    <li>Python - Beginner to Advanced</li>
-                    <li>Java - Object-Oriented Programming</li>
-                    <li>C/C++ - System Programming</li>
-                </ul>
-                <h4>Specialized Tracks:</h4>
-                <ul style="padding-left: 2rem;">
-                    <li>Data Analytics & Visualization</li>
-                    <li>Database Management (SQL)</li>
-                    <li>Full Stack Web Development</li>
-                </ul>
-            </div>
-            <button class="btn btn-primary" onclick="enrollService('Tech Guidance')">Start Learning</button>
-        </div>
-    </div>
-
-    <div id="workshopModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('workshopModal')">&times;</span>
-            <h2>Upcoming Workshops & Seminars</h2>
-            <div style="margin: 1rem 0;">
-                <div style="border-left: 4px solid #667eea; padding-left: 1rem; margin-bottom: 1rem;">
-                    <h4>AI & Machine Learning Workshop</h4>
-                    <p><strong>Date:</strong> August 10, 2025</p>
-                    <p><strong>Speaker:</strong> Dr. Sarah Johnson, Google AI</p>
-                </div>
-                <div style="border-left: 4px solid #667eea; padding-left: 1rem; margin-bottom: 1rem;">
-                    <h4>Web Development Bootcamp</h4>
-                    <p><strong>Date:</strong> August 17, 2025</p>
-                    <p><strong>Speaker:</strong> John Smith, Meta Developer</p>
-                </div>
-                <div style="border-left: 4px solid #667eea; padding-left: 1rem; margin-bottom: 1rem;">
-                    <h4>Cybersecurity Fundamentals</h4>
-                    <p><strong>Date:</strong> August 24, 2025</p>
-                    <p><strong>Speaker:</strong> Lisa Chen, IBM Security</p>
-                </div>
-            </div>
-            <button class="btn btn-primary" onclick="registerWorkshop()">Register for Workshops</button>
-        </div>
-    </div>
-<!------------------------->
-   <div class="main-bg">
-  <section class="join-section">
-    <h2>Join as SSC Mentor or Student</h2>
-    <p class="subheading">Connect, Learn, and Grow Together</p>
-    
-    <div class="join-grid">
-      <!-- Mentor Section -->
-      <div class="card">
-        <h3><i class="fas fa-chalkboard-teacher"></i> Become a Mentor</h3>
-        <ul>
-          <li>Expertise in your domain</li>
-          <li>1+ hour commitment weekly</li>
-          <li>Guide students via chat or live sessions</li>
-        </ul>
-
-        <form>
-          <input type="text" placeholder="Full Name" required  class="mb-2"/>
-          <input type="email" placeholder="Email Address" required  class="mb-2"/>
-          <input type="url" placeholder="LinkedIn Profile URL" required class="mb-2"/>
-          <textarea rows="4" placeholder="Brief About You (max 250 words)" required class="mb-2"></textarea>
-          <button type="submit">Apply as Mentor</button>
-        </form>
-      </div>
-
-      <!-- Student Section -->
-      <div class="card">
-        <h3><i class="fas fa-user-graduate"></i> Join as a Student</h3>
-        <p>Choose a group that suits your interests and start your journey:</p>
-        <a href="https://chat.whatsapp.com/H3AgvLp9axaEb2WUBbI6a1" target="_blank">👨‍💻 Join Tech Group</a>
-        <a href="https://chat.whatsapp.com/career-group-link" target="_blank">🎯 Join Career Guidance Group</a>
-        <a href="https://www.whatsapp.com/channel/0029VaYTpyWJpe8oGde6sz3K" target="_blank">🤝 Join Social Work Group</a>
+  <section class="hero-section" id="home" data-aos="fade-up">
+  <div class="hero-container">
+    <div class="hero-text">
+      <h1>Empowering Future Leaders</h1>
+      <p class="tagline">Student Service Community (SSC)</p>
+      <p class="hero-desc">
+        SSC is a mentorship-driven initiative helping students grow in their careers through guidance, internships, and social impact.
+      </p>
+      <div class="hero-cta">
+        <a href="#join" class="btn btn-join">Join SSC</a>
+        <a href="#services" class="btn btn-outline">Explore Services</a>
       </div>
     </div>
-  </section>
+    <div class="hero-image">
+      <img src="https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/v1/your-banner.jpg" alt="SSC Banner">
+    </div>
+  </div>
+  <!-- Optional Wave Divider -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 120"><path fill="#fffbe7" fill-opacity="1" d="M0,96L1440,0L1440,320L0,320Z"></path></svg>
+  </div>
+</section>
 
-  <section class="mentor-section">
-  <h2>SSC Mentors Showcase</h2>
+<section class="edu-section" id="services" data-aos="fade-up">
+  <h2 class="section-title">Educational Services</h2>
+  <p class="section-subtext">Explore resources and mentorship tracks to boost your career and learning journey.</p>
 
+  <div class="edu-grid">
+    <!-- Hackathon Guidance -->
+    <div class="edu-card">
+      <h3><i class="fas fa-lightbulb"></i> Hackathon Guidance</h3>
+      <p>Get access to curated tips, winning strategies, past project examples, and a list of upcoming national-level hackathons.</p>
+    </div>
+
+    <!-- Career Development -->
+    <div class="edu-card">
+      <h3><i class="fas fa-user-tie"></i> Career Development</h3>
+      <p>Resume building templates, mock interview prep, LinkedIn optimization, and job opportunity updates from SSC mentors.</p>
+    </div>
+
+    <!-- Tech Guidance -->
+    <div class="edu-card">
+      <h3><i class="fas fa-laptop-code"></i> Tech Guidance</h3>
+      <ul class="tech-list">
+        <li><strong>Languages:</strong> Python, Java, C, C++</li>
+        <li><strong>Data:</strong> Data Analytics, Power BI, SQL</li>
+        <li><strong>Development:</strong> Frontend, Backend, Full Stack</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="events-section" id="events" data-aos="fade-up">
+  <h2 class="section-title">Tech Events & Industry Exposure</h2>
+  <p class="section-subtext">Get hands-on experience through tech visits, developer groups, and expert-led sessions.</p>
+
+  <div class="events-grid">
+    <!-- Microsoft/GDG Events -->
+    <div class="event-card">
+      <h3><i class="fab fa-microsoft"></i> Microsoft & GDG Events</h3>
+      <p>Participate in Microsoft campus visits and Google Developer Group events. Learn about registration processes, community networking, and hear from past attendees.</p>
+    </div>
+
+    <!-- Workshops & Bootcamps -->
+    <div class="event-card">
+      <h3><i class="fas fa-chalkboard-teacher"></i> Workshops & Seminars</h3>
+      <p>Join hands-on coding bootcamps, guest lectures by industry leaders, and skill-building workshops organized regularly by SSC and partners.</p>
+    </div>
+  </div>
+</section>
+
+<section class="social-section" id="social" data-aos="fade-up">
+  <h2 class="section-title">Social Service Initiatives</h2>
+  <p class="section-subtext">SSC is committed to making a difference through heartfelt community efforts.</p>
+
+  <div class="social-grid">
+    <!-- Community Outreach -->
+    <div class="social-card">
+      <h3><i class="fas fa-hands-helping"></i> Community Outreach</h3>
+      <p>We organize food distribution, blanket donations, and emergency relief drives to support those in need.</p>
+    </div>
+
+    <!-- Celebration Events -->
+    <div class="social-card">
+      <h3><i class="fas fa-child"></i> Celebration Events</h3>
+      <p>Bringing joy through events like Children’s Day, Old Age Home visits, and cultural programs with volunteers.</p>
+    </div>
+
+    <!-- School Support -->
+    <div class="social-card">
+      <h3><i class="fas fa-school"></i> School Support</h3>
+      <p>Helping underprivileged schools through teaching sessions, education material, and meal distribution initiatives.</p>
+    </div>
+  </div>
+</section>
+
+<section class="join-ssc-section" id="join" data-aos="fade-up">
+  <h2 class="section-title">Join as SSC Mentor or Student</h2>
+  <p class="section-subtext">Step into a community of collaboration and learning — as a mentor or a student!</p>
+
+  <div class="join-flexbox">
+    <!-- Mentor Form -->
+    <div class="join-card mentor-form">
+      <h3><i class="fas fa-user-tie"></i> Become a Mentor</h3>
+      <ul class="mentor-guidelines">
+        <li>Have experience in your domain</li>
+        <li>1+ hour commitment weekly</li>
+        <li>Guide students via chat, webinars or 1:1 calls</li>
+      </ul>
+      <form>
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email Address" required />
+        <input type="url" placeholder="LinkedIn Profile URL" required />
+        <textarea rows="4" placeholder="Tell us about your background (max 250 words)" required></textarea>
+        <button type="submit">Apply as Mentor</button>
+      </form>
+    </div>
+
+    <!-- Student Links -->
+    <div class="join-card student-links">
+      <h3><i class="fas fa-users"></i> Join as a Student</h3>
+      <p>Select your interest group and connect with peers and mentors.</p>
+      <a href="https://chat.whatsapp.com/H3AgvLp9axaEb2WUBbI6a1" target="_blank">👨‍💻 Tech Group</a>
+      <a href="https://www.whatsapp.com/channel/0029VaYTpyWJpe8oGde6sz3K" target="_blank">🎯 Career Guidance Group</a>
+      <a href="https://www.whatsapp.com/channel/0029VaYTpyWJpe8oGde6sz3K" target="_blank">🤝 Social Work Group</a>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="mentors-section" id="mentors" data-aos="fade-up">
+  <h2 class="section-title">SSC Mentors Showcase</h2>
+  <p class="section-subtext">Meet the experienced mentors who guide our student community.</p>
+
+  <!-- Filters -->
   <div class="mentor-filters">
     <button onclick="filterMentors('all')">All</button>
     <button onclick="filterMentors('Tech')">Tech</button>
@@ -396,22 +181,22 @@
   </div>
 
   <!-- Mentor Cards -->
-  <div id="mentorContainer" class="mentor-container">
+  <div class="mentor-grid" id="mentorContainer">
 
     <div class="mentor-card" data-field="Tech">
       <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1736101687/SSC_DEV_HACK_NELLORE_NARAYANA_ENG_CLG/maheswaram_subrahmanyam_pgidvm.jpg" alt="Mentor">
       <h3>Maheswaram Subrahmanyam</h3>
       <p>Tech Mentor</p>
-      <div class="social-links">
-        <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      <div class="mentor-socials">
+        <a href="https://www.linkedin.com/in/maheswaram-subrahmanyam-361238275/"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
     <div class="mentor-card" data-field="Tech">
-      <img src="C:\Users\guna\OneDrive\Desktop\rumeena ssc.JPG" alt="Mentor">
+      <img src="https://res.cloudinary.com/" alt="Mentor">
       <h3>Shaik Rumeena</h3>
       <p>Tech Mentor</p>
-      <div class="social-links">
-        <a href="#" target="_blank"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      <div class="mentor-socials">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
 
@@ -419,156 +204,156 @@
       <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1739721228/SSC_HYD_MICROSOFT/sathi_uwkpyu.jpg" alt="Mentor">
       <h3>P Swaty</h3>
       <p>Career Guidance Mentor</p>
-      <div class="social-links">
-        <a href="#"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      <div class="mentor-socials">
+        <a href="https://www.linkedin.com/in/swathi-pokuri-607859312/"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
     <div class="mentor-card" data-field="Career">
       <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1739723042/SSC_HYD_MICROSOFT/SUDHA_t1iksw.jpg" alt="Mentor">
-      <h3>Sai Sudha Sugali</h3>
+      <h3>Sai Sudha Sugali </h3>
       <p>Career Guidance Mentor</p>
-      <div class="social-links">
-        <a href="#"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      <div class="mentor-socials">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
     <div class="mentor-card" data-field="Career">
       <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1736101676/SSC_DEV_HACK_NELLORE_NARAYANA_ENG_CLG/WhatsApp_Image_2025-01-05_at_23.25.27_9469efc9_ywdkok.jpg" alt="Mentor">
       <h3>Vallabi Nandini</h3>
       <p>Career Guidance Mentor</p>
-      <div class="social-links">
-        <a href="#"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      <div class="mentor-socials">
+        <a href="https://www.linkedin.com/in/nandinivallabi22h71a5459/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
-
+    
 
     <div class="mentor-card" data-field="Social">
-      <img src="" alt="Mentor">
+      <img src="https://res.cloudinary.com/" alt="Mentor">
       <h3>Shaik Nihal</h3>
       <p>Social Work Mentor</p>
-      <div class="social-links">
-        <a href="#"><img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn"></a>
+      <div class="mentor-socials">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
+    <div class="mentor-card" data-field="Social">
+      <img src="https://res.cloudinary.com/" alt="Mentor">
+      <h3>Sreekar Sidhartha</h3>
+      <p>Social Work Mentor</p>
+      <div class="mentor-socials">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="internship-section" id="internships" data-aos="fade-up">
+  <h2 class="section-title">Internship Opportunities</h2>
+  <p class="section-subtext">Discover real-world internships to boost your career path.</p>
+
+  <div class="internship-grid">
+
+    <!-- Internship 1 -->
+    <div class="internship-card">
+      <h3>Web Development Intern</h3>
+      <p><strong>Eligibility:</strong> 2nd/3rd Year CS/IT Students</p>
+      <p><strong>Deadline:</strong> July 15, 2025</p>
+      <a href="https://example.com/web-intern" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Internship 2 -->
+    <div class="internship-card">
+      <h3>Frontend Intern</h3>
+      <p><strong>Eligibility:</strong> All UG Students</p>
+      <p><strong>Deadline:</strong> July 22, 2025</p>
+      <a href="https://example.com/marketing" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
+    <!-- Internship 3 -->
+    <div class="internship-card">
+      <h3>Backend(Python) Intern</h3>
+      <p><strong>Eligibility:</strong> Python/SQL knowledge</p>
+      <p><strong>Deadline:</strong> August 5, 2025</p>
+      <a href="https://example.com/data-analyst" target="_blank" class="apply-btn">Apply Now</a>
+    </div>
+
   </div>
 </section>
 
 
- <section class="internship-section opp">
-    <h2 class="section-heading">Internship Opportunities</h2>
-
-    <div class="internship-grid">
-
-      <!-- Web Development Intern -->
-      <div class="internship-card">
-        <h3 class="internship-title">Web Development Intern</h3>
-        <p><strong>Eligibility:</strong> 2nd/3rd year CS/IT students</p>
-        <p><strong>Deadline:</strong> July 15, 2025</p>
-        <a href="https://example.com/apply" target="_blank" class="apply-btn">Apply Now</a>
-      </div>
-
-      <!-- Marketing Intern -->
-      <div class="internship-card">
-        <h3 class="internship-title">Frontend</h3>
-       <p><strong>Eligibility:</strong> All UG students</p>
-        <p><strong>Deadline:</strong> July 22, 2025</p>
-        <a href="https://example.com/marketing" target="_blank" class="apply-btn">Apply Now</a>
-      </div>
-
-      <!-- Content Writing Intern -->
-      <div class="internship-card">
-        <h3 class="internship-title">Backend - Python</h3>
-        <p><strong>Eligibility:</strong> UG</p>
-        <p><strong>Deadline:</strong> Rolling</p>
-        <a href="https://example.com/content" target="_blank" class="apply-btn">Apply Now</a>
-      </div>
-
-    </div>
-  </section>
-
-
-
-
-<section class="blog-section">
+<section class="blog-section" id="blog">
   <h2 class="section-title">SSC Blog & Success Stories</h2>
 
   <div class="blog-grid">
-
+    <!-- Story 1 -->
     <div class="blog-card">
       <h3 class="blog-title">How I Got My First Internship</h3>
-      <p class="blog-author">By Anjali Sharma, Tech Mentee</p>
-      <p class="blog-text">“Thanks to my SSC mentor, I landed a remote internship at ABC Tech. Their resume sessions were game-changing.”</p>
-      <a href="https://linkedin.com/success-story" class="read-link" target="_blank">Read More</a>
+      <p class="blog-author">Guna S</p>
+      <p class="blog-text">“Thanks to SSC’s guidance, I landed a tech internship in 2nd year. Resume sessions helped a lot.”</p>
+      <a href="https://www.linkedin.com/in/gunasaravanan/" class="read-link" target="_blank">Read More</a>
     </div>
 
+    <!-- Story 2 -->
     <div class="blog-card">
       <h3 class="blog-title">From Confused to Confident</h3>
-      <p class="blog-author">By Suresh N., Career Guidance</p>
-      <p class="blog-text">“I joined SSC with no idea what to do after college. My mentor helped me prepare for CAT and guided me personally.”</p>
-      <a href="https://linkedin.com/story" class="read-link" target="_blank">Read More</a>
+      <p class="blog-author">Suresh N</p>
+      <p class="blog-text">“I joined SSC with zero career clarity. My mentor helped me define my path toward CAT and MBA.”</p>
+      <a href="https://linkedin.com/" class="read-link" target="_blank">Read More</a>
     </div>
 
+    <!-- Story 3 -->
     <div class="blog-card">
-      <h3 class="blog-title">Volunteering as a Social Mentor</h3>
-      <p class="blog-author">By Neha R., Social Mentor</p>
-      <p class="blog-text">“Mentoring rural students gave me purpose. SSC gave me a platform to share what I learned over years.”</p>
-      <a href="https://linkedin.com/mentor-story" class="read-link" target="_blank">Read More</a>
+      <h3 class="blog-title">Giving Back as a Mentor</h3>
+      <p class="blog-author">Neha R</p>
+      <p class="blog-text">“Helping underprivileged school kids through SSC was the best thing I did this year.”</p>
+      <a href="https://linkedin.com/" class="read-link" target="_blank">Read More</a>
     </div>
-
   </div>
 </section>
+
 
 
 <section class="faq-section">
-  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <h2 class="section-title">Frequently Asked Questions</h2>
 
   <div class="faq-container">
-    
     <div class="faq-item">
       <h4 class="faq-question">Who can become an SSC mentor?</h4>
-      <p class="faq-answer">Anyone with industry experience or mentoring interest in Tech, Career, or Social fields.</p>
+      <p class="faq-answer">Anyone with industry experience and a passion for mentorship in Tech, Career, or Social sectors.</p>
     </div>
 
     <div class="faq-item">
-      <h4 class="faq-question">Is there any fee to join as a student?</h4>
-      <p class="faq-answer">No, SSC is a free mentorship and support platform.</p>
+      <h4 class="faq-question">Is there any fee to join SSC?</h4>
+      <p class="faq-answer">No, SSC is a 100% free mentorship and support platform.</p>
     </div>
 
     <div class="faq-item">
-      <h4 class="faq-question">How do I get internship updates?</h4>
-      <p class="faq-answer">Join the WhatsApp groups or follow SSC LinkedIn to receive regular updates.</p>
+      <h4 class="faq-question">How do I receive updates about internships?</h4>
+      <p class="faq-answer">Join our WhatsApp groups and follow us on LinkedIn to get all updates.</p>
     </div>
-
   </div>
 </section>
 
 
-
-<section class="contact-section">
-  <h2 class="contact-title">Contact Us</h2>
+<section class="contact-section" id="contact">
+  <h2 class="section-title">Contact Us</h2>
 
   <div class="contact-grid">
-    
-    <!-- Contact Info -->
+    <!-- Left: Info -->
     <div class="contact-info">
       <p><strong>Email:</strong> studentservicecommunity@gmail.com</p>
-      <p><strong>Phone:</strong> +91 917569399294</p>
-      <p><strong>Feedback or queries?</strong> Use the form.</p>
+      <p><strong>Phone:</strong> +91 7569399294</p>
+      <p>Have feedback or queries? Fill the form and we’ll get back to you within 24 hours.</p>
     </div>
 
-    <!-- Contact Form -->
+    <!-- Right: Form -->
     <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
       <textarea placeholder="Your Message" rows="4" required></textarea>
       <button type="submit">Send Message</button>
     </form>
-
   </div>
 </section>
-</div>
-<!-- Filter Script -->
-<script src="/script.js"> 
-</script>
-    
-</body>
-</html>
+
+ </body>
+ </html>
